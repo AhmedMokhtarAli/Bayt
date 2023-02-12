@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Byat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="apply_on_bayt">Apply on Bayt.com and find out \n when employers view your job \n \t \t \t \t \t \t \t \t \t applications</string>
+    <string name="creat_an_account_now">Creat an account now to increase your chances to \n \t \t \t \t \t find the best jobs for free on Bayt.com</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="log_in">\t Log in</string>
+    <string name="creat_account">Create Acount</string>
+    <string name="creat_cv">Create a CV that employers prefer \n and start applying to jobs, in less \n \t \t \t \t \t \t \t \t \t \t \t than 10 minutes</string>
+    <string name="you_are_one_step">You`re one step away from finding the best jobs!</string>
+</resources>

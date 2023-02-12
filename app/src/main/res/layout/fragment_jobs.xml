@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.Jobs"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_340sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/toolbar_header"
+        />
+    <TextView
+        android:id="@+id/lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="العربية"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/findJobs" />
+    <TextView
+        android:id="@+id/findJobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Find Jobs"
+        android:textSize="@dimen/_24ssp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/anyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anytime, anywhere"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/findJobs"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="@id/findJobs"
+        android:textSize="@dimen/_12ssp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="search job"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/anyTime" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/allCountriesET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/location_on"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="All countries"
+        android:padding="@dimen/_5sdp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchET" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/find_job_BTN"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:strokeWidth="0dp"
+        android:text="Find Jobs"
+        android:backgroundTint="#fff"
+        android:textColor="@color/blue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="@+id/allCountriesET"
+        app:layout_constraintTop_toBottomOf="@+id/allCountriesET" />
+
+    <TextView
+        android:id="@+id/creatCvTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:text="Create a Professional CV That \n
+        Employers Will Love"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_job_BTN" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/creat_acount_BTN"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeWidth="0dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="@string/creat_account"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@+id/creatCvTV"
+        app:layout_constraintStart_toStartOf="@+id/creatCvTV"
+        app:layout_constraintTop_toBottomOf="@+id/creatCvTV"
+
+        />
+
+    <TextView
+        android:id="@+id/haveAccountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:text="@string/already_have_an_account"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creat_acount_BTN" />
+
+    <TextView
+        android:id="@+id/LoginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:text="Log in"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/haveAccountTV"
+        app:layout_constraintTop_toBottomOf="@+id/creat_acount_BTN" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bayt_nav"
+    app:startDestination="@id/jobs">
+
+    <fragment
+        android:id="@+id/jobs"
+        android:name="com.example.byat.ui.fragments.Jobs"
+        android:label="fragment_jobs"
+        tools:layout="@layout/fragment_jobs" />
+    <fragment
+        android:id="@+id/applications"
+        android:name="com.example.byat.ui.fragments.Applications"
+        android:label="fragment_applications"
+        tools:layout="@layout/fragment_applications" />
+    <fragment
+        android:id="@+id/more"
+        android:name="com.example.byat.ui.fragments.More"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.example.byat.ui.fragments.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.byat.ui.fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
